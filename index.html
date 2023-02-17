@@ -5,7 +5,7 @@
 	<title>Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230216194551">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230217132813">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -17,45 +17,49 @@
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
 				<nav class="menu__body">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link">My background</a></li>
-						<li class="menu__item"><a href="" class="menu__link">How I can help you</a></li>
-						<li class="menu__item"><a href="" class="menu__link">My experience</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Pricing</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Current availability</a></li>
-						<li class="menu__item menu__item--new"><a href="" class="menu__link">Project breakdowns</a></li>
+						<li class="menu__item"><a href="#" class="menu__link" data-goto=".main-screen">My background</a></li>
+						<li class="menu__item"><a href="#" class="menu__link" data-goto-header data-goto=".help">How I can help you</a></li>
+						<li class="menu__item"><a href="#" class="menu__link" data-goto-header data-goto=".experience">My experience</a></li>
+						<li class="menu__item"><a href="#" class="menu__link" data-goto-header data-goto=".pricing">Pricing</a></li>
+						<li class="menu__item"><a href="#" class="menu__link" data-goto-header data-goto=".technologies">Current availability</a></li>
+						<li class="menu__item menu__item--new"><a href="#" class="menu__link" data-goto=".do">Project breakdowns</a></li>
 					</ul>
 				</nav>
 			</div>
 			<ul class="header__contact">
-				<li class="menu__item"><a href="" class="menu__link">Schedule a meeting</a></li>
-				<li class="menu__item"><a href="" class="menu__link">Hire me</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Schedule a meeting</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Hire me</a></li>
 			</ul>
 		</header>
 		<main class="page">
-			<section class="main-screen">
+			<section class="main-screen" data-watch data-watch-once>
 				<div class="main-screen__container">
-					<div class="main-screen__content">
-						<p class="main-screen__salutacions">👋 Hey, my name is Marko Polojarvi.</p>
-						<h1 class="main-screen__title">I help businesses apply new technologies and improve their online
+					<div class="main-screen__content" data-prlx-parent>
+						<p class="main-screen__salutacions" data-prlx>👋 Hey, my name is Marko Polojarvi.</p>
+						<h1 class="main-screen__title" data-prlx>I help businesses apply new technologies and improve
+							their online
 							business. <span>I also build software.</span></h1>
-						<p class="main-screen__text">🧙‍♂️ I do both with over 20 years of experience from +100
+						<p class="main-screen__text" data-prlx>🧙‍♂️ I do both with over 20 years of experience from
+							+100
 							consulting clients and +30 software projects.</p>
 					</div>
-					<div class="main-screen__img">
-						<picture><source srcset="img/person.webp" type="image/webp"><img src="img/person.jpg" alt="Person"></picture>
+					<div class="main-screen__img" data-prlx-parent>
+						<picture><source srcset="img/person.webp" type="image/webp"><img src="img/person.jpg" alt="Person" data-prlx></picture>
 					</div>
 				</div>
 			</section>
 			<section class="help">
 				<div class="help__container">
-					<h2 class="help__title title">How I can help you</h2>
-					<p class="help__text">I’ve been building and improving online businesses since 2000. I started my
+					<h2 class="help__title title" data-watch data-watch-threshold="0.5" data-watch-once>How I can help you</h2>
+					<p class="help__text" data-watch data-watch-threshold="0.5" data-watch-once>I’ve been building and improving online
+						businesses since 2000. I started my
 						first online business when I was 16. I got in early and being doing this ever since.
-					<p class="help__text">At the moment, <span>I offer two kinds of services: consulting and
+					<p class="help__text" data-watch data-watch-threshold="0.5" data-watch-once>At the moment, <span>I offer two kinds
+							of services: consulting and
 							development.</span></p>
 					</p>
 					<ul class="help__list">
-						<li class="help__item item-help">
+						<li class="help__item item-help" data-watch data-watch-threshold="0.5" data-watch-once>
 							<span class="item-help__num">1</span>
 							<div class="item-help__content">
 								<h3 class="item-help__title">Digital business consulting</h3>
@@ -64,7 +68,7 @@
 									do that for you.</p>
 							</div>
 						</li>
-						<li class="help__item item-help">
+						<li class="help__item item-help" data-watch data-watch-threshold="0.5" data-watch-once>
 							<span class="item-help__num">2</span>
 							<div class="item-help__content">
 								<h3 class="item-help__title">Custom software development</h3>
@@ -77,9 +81,9 @@
 			</section>
 			<section class="experience">
 				<div class="experience__container">
-					<h2 class="experience__title">My experience</h2>
+					<h2 class="experience__title" data-watch data-watch-threshold="0.5" data-watch-once>My experience</h2>
 					<div data-watch class="experience__items">
-						<article class="experience__item item-experience">
+						<article class="experience__item item-experience" data-watch data-watch-threshold="0.5" data-watch-once>
 							<p class="item-experience__count">+<span data-digits-counter>20</span></p>
 							<h3 class="item-experience__title">Years of experience</h3>
 							<div class="item-experience__text">
@@ -99,7 +103,7 @@
 								<li>worked with a happy client for +10 years (FDS <span class="hart">❤</span>)</li>
 							</ul>
 						</article>
-						<article class="experience__item item-experience">
+						<article class="experience__item item-experience" data-watch data-watch-threshold="0.5" data-watch-once>
 							<p class="item-experience__count">+<span data-digits-counter>30</span></p>
 							<h3 class="item-experience__title">Custom software projects</h3>
 							<div class="item-experience__text">
@@ -118,7 +122,7 @@
 								<li>software to automate various business processes</li>
 							</ul>
 						</article>
-						<article class="experience__item item-experience">
+						<article class="experience__item item-experience" data-watch data-watch-threshold="0.5" data-watch-once>
 							<p class="item-experience__count">+<span data-digits-counter>100</span></p>
 							<h3 class="item-experience__title">Consulting clients</h3>
 							<div class="item-experience__text">
@@ -143,9 +147,9 @@
 			</section>
 			<section class="pricing">
 				<div class="pricing__container">
-					<h2 class="pricing__title title">Pricing</h2>
+					<h2 class="pricing__title title" data-watch data-watch-threshold="0.5" data-watch-once>Pricing</h2>
 					<div class="pricing__items">
-						<article class="pricing__item item-common">
+						<article class="pricing__item item-common" data-watch data-watch-threshold="0.5" data-watch-once>
 							<h3 class="item-common__title">Fixed sum or hourly</h3>
 							<p class="item-common__text">I can do both lump-sum and hourly billing. The price I charge
 								depends on what we are doing.</p>
@@ -154,7 +158,7 @@
 								non-negotiable, unless you are offering more.</p>
 							<p class="item-common__text">The price includes ASAP availability.</p>
 						</article>
-						<article class="pricing__item item-common">
+						<article class="pricing__item item-common" data-watch data-watch-threshold="0.5" data-watch-once>
 							<h3 class="item-common__title">ASAP availability</h3>
 							<p class="item-common__text">As soon as possible availability works like this:</p>
 							<ul class="item-common__list">
@@ -166,7 +170,7 @@
 							<p class="item-common__text">These rules make sure that when I’m working on your business,
 								I’m fully focused.</p>
 						</article>
-						<article class="pricing__item item-common">
+						<article class="pricing__item item-common" data-watch data-watch-threshold="0.5" data-watch-once>
 							<h3 class="item-common__title">Payment methods</h3>
 							<p class="item-common__text">For payments you can use...</p>
 							<ul class="item-common__list">
@@ -176,7 +180,7 @@
 							</ul>
 							<p class="item-common__text">Feel free to pick the currency that works best for you.</p>
 						</article>
-						<article class="pricing__item item-common">
+						<article class="pricing__item item-common" data-watch data-watch-threshold="0.5" data-watch-once>
 							<h3 class="item-common__title">My work habits</h3>
 							<p class="item-common__text">I’m the type of person that likes to work and, for whatever
 								reason, have very little interest in hobbies.</p>
@@ -192,9 +196,10 @@
 			</section>
 			<section class="technologies">
 				<div class="technologies__container">
-					<h2 class="technologies__title title">Technologies I have built with</h2>
+					<h2 class="technologies__title title" data-watch data-watch-threshold="0.5" data-watch-once>Technologies I have
+						built with</h2>
 					<div class="technologies__items">
-						<article class="technologies__item item-common">
+						<article class="technologies__item item-common" data-watch data-watch-threshold="0.5" data-watch-once>
 							<h3 class="item-common__title">Application development</h3>
 							<ul class="item-common__list">
 								<li>Programming languages: <span>Javascript (NodeJS), Typescript, Python, PHP,
@@ -206,7 +211,7 @@
 								<li>UI design tools: Figma, Photoshop, Sketch</li>
 							</ul>
 						</article>
-						<article class="technologies__item item-common">
+						<article class="technologies__item item-common" data-watch data-watch-threshold="0.5" data-watch-once>
 							<h3 class="item-common__title">Backend development</h3>
 							<ul class="item-common__list">
 								<li>Relational databases: MySQL, Postgres</li>
@@ -219,14 +224,14 @@
 								<li>Monitoring: NewRelic, Rudderstack, Meta</li>
 							</ul>
 						</article>
-						<article class="technologies__item item-common">
+						<article class="technologies__item item-common" data-watch data-watch-threshold="0.5" data-watch-once>
 							<h3 class="item-common__title">Machine learning</h3>
 							<ul class="item-common__list">
 								<li>Built and trained models with: Pytorch, Tensorflow</li>
 								<li>Platforms: OpenAI, HuggingFace, Azure ML</li>
 							</ul>
 						</article>
-						<article class="technologies__item item-common">
+						<article class="technologies__item item-common" data-watch data-watch-threshold="0.5" data-watch-once>
 							<h3 class="item-common__title">Digital business</h3>
 							<ul class="item-common__list">
 								<li>Conversion optimization: Visual Website Optimizer, Optimizely</li>
@@ -235,7 +240,7 @@
 								<li>A plethora of media buy, native/in-app ad platforms</li>
 							</ul>
 						</article>
-						<article class="technologies__item item-common">
+						<article class="technologies__item item-common" data-watch data-watch-threshold="0.5" data-watch-once>
 							<h3 class="item-common__title">Blockchains</h3>
 							<ul class="item-common__list">
 								<li>Smart contracts: Ethereum, Avalanche & Binance Chain</li>
@@ -248,10 +253,11 @@
 			</section>
 			<section class="do">
 				<div class="do__container">
-					<h2 class="do__title title">Let’s do something together</h2>
-					<p class="do__text">Current availability: <span>Accepting new projects</span></p>
+					<h2 class="do__title title" data-watch data-watch-threshold="0.5" data-watch-once>Let’s do something together</h2>
+					<p class="do__text" data-watch data-watch-threshold="0.5" data-watch-once>Current availability: <span>Accepting new
+							projects</span></p>
 					<div class="do__items">
-						<a href="#" class="do__item item-help">
+						<a href="#" class="do__item item-help" data-watch data-watch-threshold="0.5" data-watch-once>
 							<img src="img/schedule.svg" alt="Schedule">
 							<div class="item-help__content">
 								<h3 class="item-help__title">Schedule a call</h3>
@@ -259,7 +265,7 @@
 									to book a free 15 min call with me.</p>
 							</div>
 						</a>
-						<a href="#" class="do__item item-help">
+						<a href="#" class="do__item item-help" data-watch data-watch-threshold="0.5" data-watch-once>
 							<img src="img/send.svg" alt="Send">
 							<div class="item-help__content">
 								<h3 class="item-help__title">Send me a message</h3>
@@ -276,7 +282,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230216194551"></script>
+	<script src="js/app.min.js?_v=20230217132813"></script>
 </body>
 
 </html>
